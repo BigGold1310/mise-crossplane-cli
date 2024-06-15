@@ -83,7 +83,7 @@ download_release() {
 			;;
 	esac
 
-	url="https://releases.crossplane.io/stable/${version}/bin/${OS_ARCH}/${BIN}"
+	url="https://releases.crossplane.io/stable/v${version}/bin/${OS_ARCH}/${BIN}"
 	echo "* Downloading $TOOL_NAME release $version..."
 	curl "${curl_opts[@]}" -o "${filename}" -C - "${url}" || fail "Could not download ${url}"
 	chmod +x ${filename}
