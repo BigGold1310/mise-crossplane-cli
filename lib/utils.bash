@@ -4,7 +4,7 @@ set -euo pipefail
 
 GH_REPO="https://github.com/crossplane/crossplane"
 TOOL_NAME="crossplane"
-TOOL_TEST="crossplane version"
+TOOL_TEST="crossplane -h"
 
 fail() {
 	echo -e "mise-$TOOL_NAME: $*"
